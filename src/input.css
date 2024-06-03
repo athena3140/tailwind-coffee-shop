@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-last-center {
+		text-align-last: center;
+	}
+}
+
+.price-badge {
+	@apply bg-[#BEE3CC] text-gray-800 px-2 rounded text-xs font-bold  flex justify-center items-center h-fit;
+}
+
+.popular-badge {
+	@apply bg-[#F6C768] text-black w-fit rounded-2xl text-xs px-2 py-1 font-semibold absolute top-2 left-2;
+}
+
+.card {
+	@apply flex flex-col gap-3 w-full relative;
+}
